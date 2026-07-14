@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_life_satisfaction_freq",
+  "source_file": "Homework 1/Crawford_ANA625_Homework_1.sas",
+  "source_blob_sha": "ec05e4947c4b7aea5d9f8d2713c1ba1aa7d56f2f",
+  "source_commit": "76ccc04297ae49e852c552d4bcc19862c4dab67d",
+  "notes": "Extra-credit block (lines 235-261) verbatim: self-contained DATA step with inline datalines (life-satisfaction by income survey) + PROC FREQ with weight/chisq/exact/relrisk/cmh/mosaicplot. No substitution needed. Reproduces the author's documented Chi-Square 8.2485 (p=0.2205) and CMH General Association p=0.2259."
+}

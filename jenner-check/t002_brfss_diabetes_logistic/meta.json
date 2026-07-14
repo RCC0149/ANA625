@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_brfss_diabetes_logistic",
+  "source_file": "Homework 2/Crawford_ANA625_Homework_2.sas",
+  "source_blob_sha": "c15fb044331e205e4ddadb0b430b9e25147dcb64",
+  "source_commit": "76ccc04297ae49e852c552d4bcc19862c4dab67d",
+  "notes": "Homework 2 BRFSS pipeline. Substitution: cdbrfs10 came from an external SAS Studio course library not in the repo, so autoexec builds a 20-row mock with the same raw BRFSS columns (AGE SEX DIABETE2 EXERANY2 EDUCA _BMI4CAT GENHLTH). All of the author's statements run unmodified: complete-case WHERE restriction, array/do-over SEX recode, DIABETES/EXERCISE derivation, PROC MEANS missingness checks, Table 2 PROC FREQ (chisq), and PROC LOGISTIC DIABETES=f(BMI,SEX,EXERCISE) with class/param=ref. Only the libname-qualified name was rewritten to the mock dataset."
+}
