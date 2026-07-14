@@ -1,0 +1,44 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T020019Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA Data_625_cdbrfs10
+
+NOTE: Processing inline DATALINES (20 lines)
+
+NOTE: Read 20 rows from DATALINES.
+NOTE: Wrote Data_625_cdbrfs10 (20 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA HW2
+
+
+NOTE: Read 20 rows from Data_625_cdbrfs10.
+NOTE: Wrote HW2 (20 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: DATA HW2
+
+
+NOTE: Read 20 rows from HW2.
+NOTE: Wrote HW2 (20 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_bmi_diabetes.spec.json
+NOTE: ODS plot written: freq_mosaic_sex_diabetes.spec.json
+NOTE: ODS plot written: freq_mosaic_exercise_diabetes.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC LOGISTIC data=HW2
+
+NOTE: Using Python statsmodels.api.Logit version 0.14.6
+NOTE: ODS plot written: logistic_oddsratio.spec.json
+NOTE: ODS plot written: logistic_roc.spec.json
+NOTE: PROC LOGISTIC ODS Graphics generated.
+NOTE: PROC LOGISTIC completed. Results written to: ./ods_output/logistic_results.spec.json

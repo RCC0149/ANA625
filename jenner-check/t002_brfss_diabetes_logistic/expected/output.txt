@@ -1,0 +1,171 @@
+                                                  The MEANS Procedure
+
+ Variable        N   N Miss
+ --------------------------
+ AGE            20        0
+ SEX            20        0
+ DIABETE2       20        0
+ EXERANY2       20        0
+ EDUCA          20        0
+ _BMI4CAT       20        0
+ GENHLTH        20        0
+ --------------------------
+
+                                                  The MEANS Procedure
+
+ Variable        N   N Miss
+ --------------------------
+ BMI            20        0
+ SEX            20        0
+ DIABETES       20        0
+ EXERCISE       20        0
+ --------------------------
+
+                                                   The FREQ Procedure
+
+Table of BMI by DIABETES
+
+BMI |         0 |         1 |      Total
+----+-----------+-----------+-----------
+1   |         6 |         0 |          6
+    |     30.00 |      0.00 |      30.00
+    |     54.55 |      0.00 |      30.00
+----+-----------+-----------+-----------
+2   |         5 |         2 |          7
+    |     25.00 |     10.00 |      35.00
+    |     45.45 |     22.22 |      35.00
+----+-----------+-----------+-----------
+3   |         0 |         7 |          7
+    |      0.00 |     35.00 |      35.00
+    |      0.00 |     77.78 |      35.00
+----+-----------+-----------+-----------
+Total |        11 |         9 |         20
+
+Statistics for Table of BMI by DIABETES
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                2 14.2280       0.0008
+Likelihood Ratio Chi-Square               2 19.1498       0.0001
+
+Cramer's V                           0.8434
+Contingency Coefficient              0.6447
+
+WARNING: 100% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+
+Table of SEX by DIABETES
+
+SEX |         0 |         1 |      Total
+----+-----------+-----------+-----------
+0   |         6 |         4 |         10
+    |     30.00 |     20.00 |      50.00
+    |     54.55 |     44.44 |      50.00
+----+-----------+-----------+-----------
+1   |         5 |         5 |         10
+    |     25.00 |     25.00 |      50.00
+    |     45.45 |     55.56 |      50.00
+----+-----------+-----------+-----------
+Total |        11 |         9 |         20
+
+Statistics for Table of SEX by DIABETES
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                1 0.2020       0.6531
+Likelihood Ratio Chi-Square               1 0.2024       0.6528
+Fisher's Exact Test                                      1.0000
+
+Phi Coefficient                      0.1005
+Contingency Coefficient              0.1000
+Cramer's V                           0.1005
+
+WARNING: 50% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+
+Table of EXERCISE by DIABETES
+
+EXERCISE |         0 |         1 |      Total
+---------+-----------+-----------+-----------
+0        |         4 |         3 |          7
+         |     20.00 |     15.00 |      35.00
+         |     36.36 |     33.33 |      35.00
+---------+-----------+-----------+-----------
+1        |         7 |         6 |         13
+         |     35.00 |     30.00 |      65.00
+         |     63.64 |     66.67 |      65.00
+---------+-----------+-----------+-----------
+Total    |        11 |         9 |         20
+
+Statistics for Table of EXERCISE by DIABETES
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                1 0.0200       0.8876
+Likelihood Ratio Chi-Square               1 0.0200       0.8875
+Fisher's Exact Test                                      1.0000
+
+Phi Coefficient                      0.0316
+Contingency Coefficient              0.0316
+Cramer's V                           0.0316
+
+WARNING: 50% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+                                     
+---------------------------  --------
+Number of Observations Read        20
+Number of Observations Used        20
+
+            Response Profile            
+  Probability modeled is DIABETES='0'   
+
+Ordered Value  DIABETES  Total Frequency
+-------------  --------  ---------------
+            1  0                      11
+            2  1                       9
+
+  Class Level Information   
+
+Class       Levels  Values  
+--------  --------  --------
+DIABETES         2  0 1     
+BMI              3  1 2 3   
+SEX              2  0 1     
+EXERCISE         2  0 1     
+
+                                             
+---------------------------------------------
+Convergence criterion (GCONV=1E-8) satisfied.
+
+                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------
+WARNING: There is possibly a quasi-complete separation of data points. The maximum likelihood estimate may not exist.
+
+The LOGISTIC Procedure
+Response Variable: DIABETES
+
+Criterion     Value
+---------  --------
+AIC          19.400
+-2 Log L      9.400
+SC           24.378
+
+            Analysis of Maximum Likelihood Estimates            
+
+Parameter  Estimate  Standard Error  Wald Chi-Square  Pr > ChiSq
+---------  --------  --------------  ---------------  ----------
+Intercept    2.2311          1.7236           1.6756      0.1955
+BMI         -1.0344          1.7065           0.3674      0.5444
+BMI         -5.2248          2.2308           5.4855      0.0192
+SEX          1.3263          1.6152           0.6744      0.4115
+EXERCISE    -0.9919          1.6114           0.3789      0.5382
+
+                     Odds Ratio Estimates                     
+
+Effect    Point Estimate  95% Wald CL Lower  95% Wald CL Upper
+--------  --------------  -----------------  -----------------
+BMI                0.355              0.013             10.078
+BMI                0.005              0.000              0.426
+SEX                3.767              0.159             89.300
+EXERCISE           0.371              0.016              8.727
+

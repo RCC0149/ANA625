@@ -1,0 +1,13 @@
+{
+  "_captured_at": "2026-07-14T05:57:28Z",
+  "_captured_run_id": "r_d8a237b169da4b4ab51e522c45ebfdea",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "Read 20 rows from Data_625_cdbrfs10.",
+    "PROC FREQ statement used.",
+    "PROC LOGISTIC completed. Results written to: ./ods_output/logistic_results.spec.json"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
